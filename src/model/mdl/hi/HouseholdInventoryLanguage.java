@@ -18,4 +18,7 @@ public class HouseholdInventoryLanguage extends CCLanguage {
     public static String Item;
     public static String Item_Stock;
     public static String Report;
+    //
+    public static String Customer;
+    public static String Operator;
 }

@@ -24,22 +24,22 @@ import javax.persistence.*;
 public class HiCustomer extends CCEntity {
 
     @Column(length = 32)
-    @CCFieldConfig(componentId = "txtName", accessible = Accessible.MANDATORY, requestFocus = true)
+    @CCFieldConfig(accessible = Accessible.MANDATORY, requestFocus = true)
     private String name;
     @Column(length = 255)
-    @CCFieldConfig(componentId = "txtAddress", visible = false)
+    @CCFieldConfig(visible = false)
     private String address;
     @Column(length = 32)
-    @CCFieldConfig(componentId = "txtEmail", type = Type.EMAIL, unique = true)
+    @CCFieldConfig(type = Type.EMAIL, unique = true)
     private String email;
     @Column(length = 32)
-    @CCFieldConfig(componentId = "txtFacebook", unique = true)
+    @CCFieldConfig(unique = true)
     private String facebook;
     /**
      * plus:receivable<br/>
      * minus:payable
      */
-    @CCFieldConfig(componentId = "txtBalance", accessible = Accessible.READONLY, type = Type.NUMBER_FORMAT, maxLength = 24)
+    @CCFieldConfig(accessible = Accessible.READONLY, type = Type.NUMBER_FORMAT)
     private Double balance = 0d;
 //<editor-fold defaultstate="collapsed" desc=" cascade ">
     @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE}, mappedBy = "customer")

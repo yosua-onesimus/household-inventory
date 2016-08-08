@@ -19,14 +19,14 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "hi_customer_phones")
-@CCTypeConfig(label = "Customer Phone", uniqueKey = "phone", parameter = true)
+@CCTypeConfig(label = "Customer Phone", uniqueKey = "phone")
 public class HiCustomerPhone extends CCEntity {
 
     @ManyToOne
-    @CCFieldConfig(componentId = "bndCustomer", accessible = Accessible.MANDATORY, maxLength = 32, uniqueKey = "name", visible = false)
+    @CCFieldConfig(accessible = Accessible.MANDATORY, maxLength = 32, uniqueKey = "name", visible = false)
     private HiCustomer customer;
     @Column(length = 16)
-    @CCFieldConfig(componentId = "txtPhone", accessible = Accessible.MANDATORY, type = Type.PHONE_NUMBER, unique = true, requestFocus = true)
+    @CCFieldConfig(accessible = Accessible.MANDATORY, type = Type.PHONE_NUMBER, unique = true, requestFocus = true)
     private String phone;
 
 //<editor-fold defaultstate="collapsed" desc=" getter-setter ">

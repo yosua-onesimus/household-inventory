@@ -9,6 +9,8 @@ import model.obj.hi.HiItemType;
 import model.obj.hi.HiUnit;
 import model.obj.hi2.HiCustomer;
 import model.obj.hi2.HiCustomerPhone;
+import model.obj.hi2.HiOperator;
+import model.obj.hi2.HiVoucherType;
 //</editor-fold>
 
 /**
@@ -32,6 +34,9 @@ public class HouseholdInventoryModule extends CCHibernateModule {
         //
         hibernate.addAnnotatedClass(HiCustomer.class);
         hibernate.addAnnotatedClass(HiCustomerPhone.class);
+        //
+        hibernate.addAnnotatedClass(HiOperator.class);
+        hibernate.addAnnotatedClass(HiVoucherType.class);
     }
 //</editor-fold>
 }

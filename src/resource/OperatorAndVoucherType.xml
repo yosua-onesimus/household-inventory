@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Parameter>
+  <HiOperator code="A" id="1" logSaveTimes="0" name="AS"/>
+  <HiOperator code="S" id="2" logSaveTimes="0" name="Simpati"/>
+  <HiOperator code="SF" id="3" logSaveTimes="0" name="Smart Fren"/>
+  <HiOperator code="H" id="4" logSaveTimes="0" name="Hepi"/>
+  <HiOperator code="M" id="5" logSaveTimes="0" name="Im3"/>
+  <HiOperator code="M" id="6" logSaveTimes="0" name="Mentari"/>
+  <HiOperator code="SO" id="7" logSaveTimes="0" name="Starone"/>
+  <HiOperator code="E" id="8" logSaveTimes="0" name="Esia"/>
+  <HiOperator code="X" id="9" logSaveTimes="0" name="XL"/>
+  <HiOperator code="AX" id="10" logSaveTimes="0" name="Axis"/>
+  <HiOperator code="T" id="11" logSaveTimes="0" name="3(Three)"/>
+  <HiOperator code="F" id="12" logSaveTimes="0" name="Flexi"/>
+  <HiOperator code="PLN" id="13" logSaveTimes="0" name="PLN Prabayar"/>
+  <HiVoucherType id="1" logSaveTimes="0" nominal="5" operator="1" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="2" logSaveTimes="0" nominal="10" operator="1" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="3" logSaveTimes="0" nominal="20" operator="1" purchasePrice="20200.0" salePrice="20200.0"/>
+  <HiVoucherType id="4" logSaveTimes="0" nominal="25" operator="1" purchasePrice="25400.0" salePrice="25400.0"/>
+  <HiVoucherType id="5" logSaveTimes="0" nominal="50" operator="1" purchasePrice="49500.0" salePrice="49500.0"/>
+  <HiVoucherType id="6" logSaveTimes="0" nominal="100" operator="1" purchasePrice="97800.0" salePrice="97800.0"/>
+  <HiVoucherType id="7" logSaveTimes="0" nominal="5" operator="2" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="8" logSaveTimes="0" nominal="10" operator="2" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="9" logSaveTimes="0" nominal="20" operator="2" purchasePrice="20200.0" salePrice="20200.0"/>
+  <HiVoucherType id="10" logSaveTimes="0" nominal="25" operator="2" purchasePrice="25400.0" salePrice="25400.0"/>
+  <HiVoucherType id="11" logSaveTimes="0" nominal="50" operator="2" purchasePrice="49500.0" salePrice="49500.0"/>
+  <HiVoucherType id="12" logSaveTimes="0" nominal="100" operator="2" purchasePrice="97800.0" salePrice="97800.0"/>
+  <HiVoucherType id="13" logSaveTimes="0" nominal="5" operator="3" purchasePrice="5050.0" salePrice="5050.0"/>
+  <HiVoucherType id="14" logSaveTimes="0" nominal="10" operator="3" purchasePrice="10000.0" salePrice="10000.0"/>
+  <HiVoucherType id="15" logSaveTimes="0" nominal="20" operator="3" purchasePrice="19600.0" salePrice="19600.0"/>
+  <HiVoucherType id="16" logSaveTimes="0" nominal="50" operator="3" purchasePrice="49000.0" salePrice="49000.0"/>
+  <HiVoucherType id="17" logSaveTimes="0" nominal="100" operator="3" purchasePrice="98000.0" salePrice="98000.0"/>
+  <HiVoucherType id="18" logSaveTimes="0" nominal="5" operator="4" purchasePrice="5050.0" salePrice="5050.0"/>
+  <HiVoucherType id="19" logSaveTimes="0" nominal="10" operator="4" purchasePrice="10000.0" salePrice="10000.0"/>
+  <HiVoucherType id="20" logSaveTimes="0" nominal="20" operator="4" purchasePrice="19600.0" salePrice="19600.0"/>
+  <HiVoucherType id="21" logSaveTimes="0" nominal="50" operator="4" purchasePrice="49000.0" salePrice="49000.0"/>
+  <HiVoucherType id="22" logSaveTimes="0" nominal="100" operator="4" purchasePrice="98000.0" salePrice="98000.0"/>
+  <HiVoucherType id="23" logSaveTimes="0" nominal="2" operator="5" purchasePrice="2300.0" salePrice="2300.0"/>
+  <HiVoucherType id="24" logSaveTimes="0" nominal="5" operator="5" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="25" logSaveTimes="0" nominal="MS5/MG5" operator="5" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="26" logSaveTimes="0" nominal="10" operator="5" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="27" logSaveTimes="0" nominal="MS10/MG10" operator="5" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="28" logSaveTimes="0" nominal="25" operator="5" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="29" logSaveTimes="0" nominal="MS25/MG25" operator="5" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="30" logSaveTimes="0" nominal="50" operator="5" purchasePrice="49200.0" salePrice="49200.0"/>
+  <HiVoucherType id="31" logSaveTimes="0" nominal="100" operator="5" purchasePrice="98000.0" salePrice="98000.0"/>
+  <HiVoucherType id="32" logSaveTimes="0" nominal="2" operator="6" purchasePrice="2300.0" salePrice="2300.0"/>
+  <HiVoucherType id="33" logSaveTimes="0" nominal="5" operator="6" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="34" logSaveTimes="0" nominal="MS5/MG5" operator="6" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="35" logSaveTimes="0" nominal="10" operator="6" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="36" logSaveTimes="0" nominal="MS10/MG10" operator="6" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="37" logSaveTimes="0" nominal="25" operator="6" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="38" logSaveTimes="0" nominal="MS25/MG25" operator="6" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="39" logSaveTimes="0" nominal="50" operator="6" purchasePrice="49200.0" salePrice="49200.0"/>
+  <HiVoucherType id="40" logSaveTimes="0" nominal="100" operator="6" purchasePrice="98000.0" salePrice="98000.0"/>
+  <HiVoucherType id="41" logSaveTimes="0" nominal="2" operator="7" purchasePrice="2300.0" salePrice="2300.0"/>
+  <HiVoucherType id="42" logSaveTimes="0" nominal="5" operator="7" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="43" logSaveTimes="0" nominal="MS5/MG5" operator="7" purchasePrice="5300.0" salePrice="5300.0"/>
+  <HiVoucherType id="44" logSaveTimes="0" nominal="10" operator="7" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="45" logSaveTimes="0" nominal="MS10/MG10" operator="7" purchasePrice="10300.0" salePrice="10300.0"/>
+  <HiVoucherType id="46" logSaveTimes="0" nominal="25" operator="7" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="47" logSaveTimes="0" nominal="MS25/MG25" operator="7" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="48" logSaveTimes="0" nominal="50" operator="7" purchasePrice="49200.0" salePrice="49200.0"/>
+  <HiVoucherType id="49" logSaveTimes="0" nominal="100" operator="7" purchasePrice="98000.0" salePrice="98000.0"/>
+  <HiVoucherType id="50" logSaveTimes="0" nominal="1" operator="8" purchasePrice="1300.0" salePrice="1300.0"/>
+  <HiVoucherType id="51" logSaveTimes="0" nominal="5" operator="8" purchasePrice="5350.0" salePrice="5350.0"/>
+  <HiVoucherType id="52" logSaveTimes="0" nominal="10" operator="8" purchasePrice="10200.0" salePrice="10200.0"/>
+  <HiVoucherType id="53" logSaveTimes="0" nominal="20" operator="8" purchasePrice="20000.0" salePrice="20000.0"/>
+  <HiVoucherType id="54" logSaveTimes="0" nominal="25" operator="8" purchasePrice="24900.0" salePrice="24900.0"/>
+  <HiVoucherType id="55" logSaveTimes="0" nominal="50" operator="8" purchasePrice="49700.0" salePrice="49700.0"/>
+  <HiVoucherType id="56" logSaveTimes="0" nominal="100" operator="8" purchasePrice="98800.0" salePrice="98800.0"/>
+  <HiVoucherType id="57" logSaveTimes="0" nominal="1" operator="9" purchasePrice="1300.0" salePrice="1300.0"/>
+  <HiVoucherType id="58" logSaveTimes="0" nominal="5" operator="9" purchasePrice="5350.0" salePrice="5350.0"/>
+  <HiVoucherType id="59" logSaveTimes="0" nominal="10/X10" operator="9" purchasePrice="10250.0" salePrice="10250.0"/>
+  <HiVoucherType id="60" logSaveTimes="0" nominal="25" operator="9" purchasePrice="25000.0" salePrice="25000.0"/>
+  <HiVoucherType id="61" logSaveTimes="0" nominal="50/X50" operator="9" purchasePrice="49650.0" salePrice="49650.0"/>
+  <HiVoucherType id="62" logSaveTimes="0" nominal="100/X100" operator="9" purchasePrice="99250.0" salePrice="99250.0"/>
+  <HiVoucherType id="63" logSaveTimes="0" nominal="1" operator="10" purchasePrice="1300.0" salePrice="1300.0"/>
+  <HiVoucherType id="64" logSaveTimes="0" nominal="2" operator="10" purchasePrice="2200.0" salePrice="2200.0"/>
+  <HiVoucherType id="65" logSaveTimes="0" nominal="3" operator="10" purchasePrice="3200.0" salePrice="3200.0"/>
+  <HiVoucherType id="66" logSaveTimes="0" nominal="5" operator="10" purchasePrice="5200.0" salePrice="5200.0"/>
+  <HiVoucherType id="67" logSaveTimes="0" nominal="10" operator="10" purchasePrice="10250.0" salePrice="10250.0"/>
+  <HiVoucherType id="68" logSaveTimes="0" nominal="20" operator="10" purchasePrice="20250.0" salePrice="20250.0"/>
+  <HiVoucherType id="69" logSaveTimes="0" nominal="25" operator="10" purchasePrice="25200.0" salePrice="25200.0"/>
+  <HiVoucherType id="70" logSaveTimes="0" nominal="50" operator="10" purchasePrice="50150.0" salePrice="50150.0"/>
+  <HiVoucherType id="71" logSaveTimes="0" nominal="100" operator="10" purchasePrice="100000.0" salePrice="100000.0"/>
+  <HiVoucherType id="72" logSaveTimes="0" nominal="1" operator="11" purchasePrice="1100.0" salePrice="1100.0"/>
+  <HiVoucherType id="73" logSaveTimes="0" nominal="5" operator="11" purchasePrice="5250.0" salePrice="5250.0"/>
+  <HiVoucherType id="74" logSaveTimes="0" nominal="10" operator="11" purchasePrice="9950.0" salePrice="9950.0"/>
+  <HiVoucherType id="75" logSaveTimes="0" nominal="20" operator="11" purchasePrice="19800.0" salePrice="19800.0"/>
+  <HiVoucherType id="76" logSaveTimes="0" nominal="30" operator="11" purchasePrice="29550.0" salePrice="29550.0"/>
+  <HiVoucherType id="77" logSaveTimes="0" nominal="50" operator="11" purchasePrice="49100.0" salePrice="49100.0"/>
+  <HiVoucherType id="78" logSaveTimes="0" nominal="100" operator="11" purchasePrice="98150.0" salePrice="98150.0"/>
+  <HiVoucherType id="79" logSaveTimes="0" nominal="5" operator="12" purchasePrice="5050.0" salePrice="5050.0"/>
+  <HiVoucherType id="80" logSaveTimes="0" nominal="10" operator="12" purchasePrice="9900.0" salePrice="9900.0"/>
+  <HiVoucherType id="81" logSaveTimes="0" nominal="20" operator="12" purchasePrice="19550.0" salePrice="19550.0"/>
+  <HiVoucherType id="82" logSaveTimes="0" nominal="25" operator="12" purchasePrice="24600.0" salePrice="24600.0"/>
+  <HiVoucherType id="83" logSaveTimes="0" nominal="50" operator="12" purchasePrice="48800.0" salePrice="48800.0"/>
+  <HiVoucherType id="84" logSaveTimes="0" nominal="100" operator="12" purchasePrice="97300.0" salePrice="97300.0"/>
+  <HiVoucherType id="85" logSaveTimes="0" nominal="20" operator="13" purchasePrice="19500.0" salePrice="19500.0"/>
+  <HiVoucherType id="86" logSaveTimes="0" nominal="25" operator="13" purchasePrice="24500.0" salePrice="24500.0"/>
+  <HiVoucherType id="87" logSaveTimes="0" nominal="30" operator="13" purchasePrice="29500.0" salePrice="29500.0"/>
+  <HiVoucherType id="88" logSaveTimes="0" nominal="50" operator="13" purchasePrice="49500.0" salePrice="49500.0"/>
+  <HiVoucherType id="89" logSaveTimes="0" nominal="100" operator="13" purchasePrice="99500.0" salePrice="99500.0"/>
+  <HiVoucherType id="90" logSaveTimes="0" nominal="150" operator="13" purchasePrice="149500.0" salePrice="149500.0"/>
+  <HiVoucherType id="91" logSaveTimes="0" nominal="200" operator="13" purchasePrice="199500.0" salePrice="199500.0"/>
+  <HiVoucherType id="92" logSaveTimes="0" nominal="250" operator="13" purchasePrice="249000.0" salePrice="249000.0"/>
+</Parameter>
