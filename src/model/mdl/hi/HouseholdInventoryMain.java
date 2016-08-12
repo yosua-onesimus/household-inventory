@@ -5,8 +5,10 @@ import static cococare.framework.common.CFApplCtrl.APPL_CODE;
 import cococare.framework.common.CFApplUae;
 import cococare.framework.swing.CFSwingMain;
 import controller.form.hi.PnlItemListCtrl;
+import controller.form.hi.PnlItemStockListCtrl;
 import controller.form.hi.PnlItemTypeListCtrl;
 import controller.form.hi.PnlUnitListCtrl;
+import controller.form.hi2.PnlCustomerListCtrl;
 //</editor-fold>
 
 /**
@@ -40,6 +42,8 @@ public class HouseholdInventoryMain extends CFSwingMain {
         uae.reg(APPL_CODE, "Unit", PnlUnitListCtrl.class);
         uae.reg(APPL_CODE, "Item Type", PnlItemTypeListCtrl.class);
         uae.reg(APPL_CODE, "Item", PnlItemListCtrl.class);
+        uae.reg(APPL_CODE, "Item Stock", PnlItemStockListCtrl.class);
+        uae.reg(APPL_CODE, "Customer", PnlCustomerListCtrl.class);
     }
 
     @Override
@@ -48,6 +52,9 @@ public class HouseholdInventoryMain extends CFSwingMain {
         uae.addMenuChild("Unit", null, PnlUnitListCtrl.class);
         uae.addMenuChild("Item Type", null, PnlItemTypeListCtrl.class);
         uae.addMenuChild("Item", null, PnlItemListCtrl.class);
+        uae.addMenuChild("Item Stock", null, PnlItemStockListCtrl.class);
+        uae.addMenuParent("Customer", null, null);
+        uae.addMenuChild("Customer", null, PnlCustomerListCtrl.class);
     }
 
     @Override
