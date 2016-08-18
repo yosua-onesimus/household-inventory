@@ -1,14 +1,14 @@
 package model.mdl.hi;
 
 //<editor-fold defaultstate="collapsed" desc=" import ">
+import static model.mdl.hi.HouseholdInventoryLanguage.*;
+import cococare.common.CCLanguage;
 import static cococare.framework.common.CFApplCtrl.APPL_CODE;
 import cococare.framework.common.CFApplUae;
 import cococare.framework.swing.CFSwingMain;
-import controller.form.hi.PnlItemListCtrl;
-import controller.form.hi.PnlItemStockListCtrl;
-import controller.form.hi.PnlItemTypeListCtrl;
-import controller.form.hi.PnlUnitListCtrl;
+import controller.form.hi.*;
 import controller.form.hi2.PnlCustomerListCtrl;
+import model.obj.hi.HiReport;
 //</editor-fold>
 
 /**
@@ -24,10 +24,12 @@ public class HouseholdInventoryMain extends CFSwingMain {
         APPL_CODE = "household-inventory";
         APPL_NAME = "household-inventory";
         super._loadInternalSetting();
+        HiReport.setupReportFile(HiReport.Report.class);
     }
 
     @Override
     protected void _loadExternalSetting() {
+        CCLanguage.init(false, HouseholdInventoryLanguage.class);
         super._loadExternalSetting();
     }
 
@@ -39,20 +41,22 @@ public class HouseholdInventoryMain extends CFSwingMain {
 
     @Override
     protected void _initInitialUaeBody(CFApplUae uae) {
-        uae.reg(APPL_CODE, "Unit", PnlUnitListCtrl.class);
-        uae.reg(APPL_CODE, "Item Type", PnlItemTypeListCtrl.class);
-        uae.reg(APPL_CODE, "Item", PnlItemListCtrl.class);
-        uae.reg(APPL_CODE, "Item Stock", PnlItemStockListCtrl.class);
+        uae.reg(APPL_CODE, Unit, PnlUnitListCtrl.class);
+        uae.reg(APPL_CODE, Item_Type, PnlItemTypeListCtrl.class);
+        uae.reg(APPL_CODE, Item, PnlItemListCtrl.class);
+        uae.reg(APPL_CODE, Item_Stock, PnlItemStockListCtrl.class);
+        uae.reg(APPL_CODE, Report, PnlReportListCtrl.class);
         uae.reg(APPL_CODE, "Customer", PnlCustomerListCtrl.class);
     }
 
     @Override
     protected void _applyUserConfigUaeBody(CFApplUae uae) {
         uae.addMenuParent("Item & Stock", null, null);
-        uae.addMenuChild("Unit", null, PnlUnitListCtrl.class);
-        uae.addMenuChild("Item Type", null, PnlItemTypeListCtrl.class);
-        uae.addMenuChild("Item", null, PnlItemListCtrl.class);
-        uae.addMenuChild("Item Stock", null, PnlItemStockListCtrl.class);
+        uae.addMenuChild(Unit, null, PnlUnitListCtrl.class);
+        uae.addMenuChild(Item_Type, null, PnlItemTypeListCtrl.class);
+        uae.addMenuChild(Item, null, PnlItemListCtrl.class);
+        uae.addMenuChild(Item_Stock, null, PnlItemStockListCtrl.class);
+        uae.addMenuChild(Report, null, PnlReportListCtrl.class);
         uae.addMenuParent("Customer", null, null);
         uae.addMenuChild("Customer", null, PnlCustomerListCtrl.class);
     }
