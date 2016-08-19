@@ -9,7 +9,9 @@ import cococare.framework.model.bo.util.UtilConfigBo;
 import cococare.framework.swing.CFSwingMain;
 import controller.form.hi.*;
 import controller.form.hi2.PnlCustomerListCtrl;
+import controller.form.hi2.PnlDepositListCtrl;
 import controller.form.hi2.PnlOperatorListCtrl;
+import controller.form.hi2.PnlSellingListCtrl;
 import java.util.Arrays;
 import model.bo.hi2.HiInitialDataBo;
 import model.obj.hi.HiReport;
@@ -64,6 +66,8 @@ public class HouseholdInventoryMain extends CFSwingMain {
         uae.reg(APPL_CODE, Report, PnlReportListCtrl.class);
         uae.reg(APPL_CODE, Customer, PnlCustomerListCtrl.class);
         uae.reg(APPL_CODE, Operator, PnlOperatorListCtrl.class);
+        uae.reg(APPL_CODE, Deposit, PnlDepositListCtrl.class);
+        uae.reg(APPL_CODE, Selling, PnlSellingListCtrl.class);
     }
 
     @Override
@@ -77,6 +81,8 @@ public class HouseholdInventoryMain extends CFSwingMain {
         uae.addMenuParent("Phone & Voucher", null, null);
         uae.addMenuChild(Customer, null, PnlCustomerListCtrl.class);
         uae.addMenuChild(Operator, null, PnlOperatorListCtrl.class);
+        uae.addMenuChild(Deposit, null, PnlDepositListCtrl.class);
+        uae.addMenuChild(Selling, null, PnlSellingListCtrl.class);
     }
 
     @Override

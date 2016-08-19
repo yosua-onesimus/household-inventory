@@ -5,6 +5,7 @@ import static cococare.common.CCMath.round;
 import cococare.database.CCHibernateBo;
 import cococare.framework.model.dao.util.UtilConfigDao;
 import java.util.List;
+import model.dao.hi2.HiDepositDao;
 import model.dao.hi2.HiVoucherTypeDao;
 import model.obj.hi2.HiConfig;
 import model.obj.hi2.HiVoucherType;
@@ -20,8 +21,8 @@ public class HiConfigBo extends CCHibernateBo {
 //<editor-fold defaultstate="collapsed" desc=" private object ">
     private UtilConfigDao configDao;
     private HiVoucherTypeDao voucherTypeDao;
-//    private HiDepositDao depositDao;
-//    private HiSellingDao sellingDao;
+    private HiDepositDao depositDao;
+    private HiSellingDao sellingDao;
 //</editor-fold>
 
 //<editor-fold defaultstate="collapsed" desc=" public method ">
@@ -35,14 +36,14 @@ public class HiConfigBo extends CCHibernateBo {
 
     public synchronized boolean recalculateSaldo() {
         HiConfig config = loadHiConfig();
-//        config.setSaldo(depositDao.sumAmount() - sellingDao.sumPurchasePrice());
+        config.setSaldo(depositDao.sumAmount() - sellingDao.sumPurchasePrice());
         return saveConf(config);
     }
 
     public synchronized boolean recalculateSaldoProfit() {
         HiConfig config = loadHiConfig();
-//        config.setSaldo(depositDao.sumAmount() - sellingDao.sumPurchasePrice());
-//        config.setProfit(sellingDao.sumProfit());
+        config.setSaldo(depositDao.sumAmount() - sellingDao.sumPurchasePrice());
+        config.setProfit(sellingDao.sumProfit());
         return saveConf(config);
     }
 
