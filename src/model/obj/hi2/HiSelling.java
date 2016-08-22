@@ -28,15 +28,12 @@ public class HiSelling extends CCEntity {
     @CCFieldConfig(accessible = Accessible.MANDATORY, type = Type.DATE)
     private Date date = new Date();
     @ManyToOne
-    @CCFieldConfig(accessible = Accessible.NORMAL, maxLength = 32, uniqueKey = "@name-@phone")
-    private HiCustomer customer;
-    @ManyToOne
     @CCFieldConfig(accessible = Accessible.MANDATORY, maxLength = 32, uniqueKey = "@customer.name-@phone")
     private HiCustomerPhone customerPhone;
     @ManyToOne
     @CCFieldConfig(accessible = Accessible.MANDATORY, maxLength = 32, uniqueKey = "@operator.name-@nominal")
     private HiVoucherType voucherType;
-    @CCFieldConfig(accessible = Accessible.MANDATORY, type = Type.NUMBER_FORMAT)
+    @CCFieldConfig(accessible = Accessible.MANDATORY_READONLY, type = Type.NUMBER_FORMAT)
     private Double purchasePrice = 0d;
     @CCFieldConfig(accessible = Accessible.MANDATORY_READONLY, type = Type.NUMBER_FORMAT)
     private Double salePrice = 0d;
@@ -58,14 +55,6 @@ public class HiSelling extends CCEntity {
 
     public void setDate(Date date) {
         this.date = date;
-    }
-
-    public HiCustomer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(HiCustomer customer) {
-        this.customer = customer;
     }
 
     public HiCustomerPhone getCustomerPhone() {
