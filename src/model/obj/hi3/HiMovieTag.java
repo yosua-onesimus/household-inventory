@@ -20,22 +20,11 @@ import javax.persistence.Table;
 @CCTypeConfig(label = "Movie Tag", uniqueKey = "name", parameter = true)
 public class HiMovieTag extends CCEntity {
 
-    @Column(length = 8)
-    @CCFieldConfig(accessible = Accessible.MANDATORY, unique = true, requestFocus = true)
-    private String code;
     @Column(length = 32)
     @CCFieldConfig(accessible = Accessible.MANDATORY)
     private String name;
 
 //<editor-fold defaultstate="collapsed" desc=" getter-setter ">
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
     public String getName() {
         return name;
     }

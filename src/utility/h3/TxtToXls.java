@@ -10,6 +10,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 //</editor-fold>
 
+/**
+ * @author Yosua Onesimus
+ * @since 13.03.17
+ * @version 13.03.17
+ */
 public class TxtToXls {
 
     private static final Pattern PATTERN = Pattern.compile("---([^\\[\\]]+)(\\[(.+)\\])*");

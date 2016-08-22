@@ -23,4 +23,7 @@ public class HouseholdInventoryLanguage extends CCLanguage {
     public static String Voucher_Type;
     public static String Deposit;
     public static String Selling;
+    //
+    public static String Movie_Tag;
+    public static String Movie;
 }
