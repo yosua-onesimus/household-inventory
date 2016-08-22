@@ -15,8 +15,10 @@ import controller.form.hi2.PnlOperatorListCtrl;
 import controller.form.hi2.PnlSellingListCtrl;
 import java.util.Arrays;
 import model.bo.hi2.HiInitialDataBo;
+import model.obj.hi.HiItemType;
 import model.obj.hi.HiReport;
 import model.obj.hi2.HiConfig;
+import model.obj.hi2.HiOperator;
 //</editor-fold>
 
 /**
@@ -53,6 +55,9 @@ public class HouseholdInventoryMain extends CFSwingMain {
         confAppl = configBo.loadConfAppl();
         confAppl.setUtilAdditionalSettingClass(Arrays.asList(
                 HiConfig.class.getName()));
+        confAppl.setUtilAdditionalTabClass(Arrays.asList(
+                HiItemType.class.getName(),
+                HiOperator.class.getName()));
         return super._initInitialData()
                 && configBo.saveConf(confAppl)
                 && new HiInitialDataBo().initInitialData();

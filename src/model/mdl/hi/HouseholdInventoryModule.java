@@ -13,6 +13,8 @@ import model.obj.hi2.HiDeposit;
 import model.obj.hi2.HiOperator;
 import model.obj.hi2.HiSelling;
 import model.obj.hi2.HiVoucherType;
+import model.obj.hi3.HiMovie;
+import model.obj.hi3.HiMovieTag;
 //</editor-fold>
 
 /**
@@ -41,6 +43,9 @@ public class HouseholdInventoryModule extends CCHibernateModule {
         hibernate.addAnnotatedClass(HiVoucherType.class);
         hibernate.addAnnotatedClass(HiDeposit.class);
         hibernate.addAnnotatedClass(HiSelling.class);
+        //
+        hibernate.addAnnotatedClass(HiMovieTag.class);
+        hibernate.addAnnotatedClass(HiMovie.class);
     }
 //</editor-fold>
 }
