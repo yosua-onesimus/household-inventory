@@ -1,4 +1,4 @@
-package model.bo.hi2;
+package model.dao.hi2;
 
 //<editor-fold defaultstate="collapsed" desc=" import ">
 import static cococare.common.CCFormat.parseDouble;

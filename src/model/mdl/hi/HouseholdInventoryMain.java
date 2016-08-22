@@ -1,6 +1,7 @@
 package model.mdl.hi;
 
 //<editor-fold defaultstate="collapsed" desc=" import ">
+import controller.form.hi2.PnlHomeCtrl;
 import static model.mdl.hi.HouseholdInventoryLanguage.*;
 import cococare.common.CCLanguage;
 import static cococare.framework.common.CFApplCtrl.APPL_CODE;
@@ -72,6 +73,8 @@ public class HouseholdInventoryMain extends CFSwingMain {
 
     @Override
     protected void _applyUserConfigUaeBody(CFApplUae uae) {
+        uae.addMenuRoot(PnlHomeCtrl.class);
+        uae.addMenuParent(Home, "/cococare/resource/icon-menu-home.png", PnlHomeCtrl.class);
         uae.addMenuParent("Item & Stock", null, null);
         uae.addMenuChild(Unit, null, PnlUnitListCtrl.class);
         uae.addMenuChild(Item_Type, null, PnlItemTypeListCtrl.class);
@@ -87,7 +90,7 @@ public class HouseholdInventoryMain extends CFSwingMain {
 
     @Override
     protected boolean _showHomeScreen() {
-        return true;
+        return new PnlHomeCtrl().init();
     }
 
     public static void main(String[] args) {

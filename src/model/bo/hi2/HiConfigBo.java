@@ -1,6 +1,7 @@
 package model.bo.hi2;
 
 //<editor-fold defaultstate="collapsed" desc=" import ">
+import model.dao.hi2.HiSellingDao;
 import static cococare.common.CCMath.round;
 import cococare.database.CCHibernateBo;
 import cococare.framework.model.dao.util.UtilConfigDao;
