@@ -13,6 +13,7 @@ import controller.form.hi2.PnlCustomerListCtrl;
 import controller.form.hi2.PnlDepositListCtrl;
 import controller.form.hi2.PnlOperatorListCtrl;
 import controller.form.hi2.PnlSellingListCtrl;
+import controller.form.hi3.PnlMovieListCtrl;
 import java.util.Arrays;
 import model.bo.hi2.HiInitialDataBo;
 import model.obj.hi.HiItemType;
@@ -74,6 +75,7 @@ public class HouseholdInventoryMain extends CFSwingMain {
         uae.reg(APPL_CODE, Operator, PnlOperatorListCtrl.class);
         uae.reg(APPL_CODE, Deposit, PnlDepositListCtrl.class);
         uae.reg(APPL_CODE, Selling, PnlSellingListCtrl.class);
+        uae.reg(APPL_CODE, Movie, PnlMovieListCtrl.class);
     }
 
     @Override
@@ -91,6 +93,8 @@ public class HouseholdInventoryMain extends CFSwingMain {
         uae.addMenuChild(Operator, null, PnlOperatorListCtrl.class);
         uae.addMenuChild(Deposit, null, PnlDepositListCtrl.class);
         uae.addMenuChild(Selling, null, PnlSellingListCtrl.class);
+        uae.addMenuParent("Movie Collection", null, null);
+        uae.addMenuChild(Movie, null, PnlMovieListCtrl.class);
     }
 
     @Override

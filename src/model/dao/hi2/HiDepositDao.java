@@ -22,10 +22,13 @@ public class HiDepositDao extends HouseholdInventoryDao {
 
 //<editor-fold defaultstate="collapsed" desc=" public method ">
     public double sumAmount() {
-        hql.start().
-                select("SUM(amount)");
+//        hql.start().
+//                select("SUM(amount)");
+//        parameters.start();
+//        return parseDouble(getBy(hql.value(), parameters.value()));
+        hql.start();
         parameters.start();
-        return parseDouble(getBy(hql.value(), parameters.value()));
+        return parseDouble(getBy(getInternalQuery("select-sum-amount-deposit.sql"), parameters.value()));
     }
 //</editor-fold>
 }
