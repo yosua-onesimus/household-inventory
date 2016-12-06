@@ -1,8 +1,9 @@
 package model.mdl.hi;
 
 //<editor-fold defaultstate="collapsed" desc=" import ">
-import cococare.database.CCHibernate;
 import cococare.database.CCHibernateModule;
+import java.util.Arrays;
+import java.util.List;
 import model.obj.hi.HiItem;
 import model.obj.hi.HiItemStock;
 import model.obj.hi.HiItemType;
@@ -28,24 +29,24 @@ public class HouseholdInventoryModule extends CCHibernateModule {
 
 //<editor-fold defaultstate="collapsed" desc=" public method ">
     @Override
-    public void init(CCHibernate hibernate) {
-        super.init(hibernate);
-        //parameter
-        hibernate.addAnnotatedClass(HiUnit.class);
-        hibernate.addAnnotatedClass(HiItemType.class);
-        hibernate.addAnnotatedClass(HiItem.class);
-        hibernate.addAnnotatedClass(HiItemStock.class);
-        //
-        hibernate.addAnnotatedClass(HiCustomer.class);
-        hibernate.addAnnotatedClass(HiCustomerPhone.class);
-        //
-        hibernate.addAnnotatedClass(HiOperator.class);
-        hibernate.addAnnotatedClass(HiVoucherType.class);
-        hibernate.addAnnotatedClass(HiDeposit.class);
-        hibernate.addAnnotatedClass(HiSelling.class);
-        //
-        hibernate.addAnnotatedClass(HiMovieTag.class);
-        hibernate.addAnnotatedClass(HiMovie.class);
+    protected List<Class> _getAnnotatedClasses() {
+        return (List) Arrays.asList(
+                //parameter
+                HiUnit.class,
+                HiItemType.class,
+                HiItem.class,
+                HiItemStock.class,
+                //
+                HiCustomer.class,
+                HiCustomerPhone.class,
+                //
+                HiOperator.class,
+                HiVoucherType.class,
+                HiDeposit.class,
+                HiSelling.class,
+                //
+                HiMovieTag.class,
+                HiMovie.class);
     }
 //</editor-fold>
 }

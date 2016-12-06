@@ -14,7 +14,7 @@ public class PnlOperatorListCtrl extends PnlDefaultListCtrl {
 
     @Override
     protected Class _getClass() {
-        return _getClassBySwingView();
+        return _getDefaultToCustomClass();
     }
 
     @Override
